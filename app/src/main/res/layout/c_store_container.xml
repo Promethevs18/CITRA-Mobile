@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buongLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="false"
+    android:layout_marginBottom="6dp"
+    android:animateLayoutChanges="false"
+    android:background="@drawable/card_bg"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp">
+
+    <ImageView
+        android:id="@+id/imageLugar"
+        android:layout_width="139dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        android:background="#000000"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:capitalize="characters"
+        android:fontFamily="@font/cabin"
+        android:text="MT. KALATUNGAN"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageLugar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/itemPrice"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/cabin"
+        android:text="Pangantucan"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/itemName"
+        app:layout_constraintTop_toBottomOf="@+id/itemName" />
+
+    <TextView
+        android:id="@+id/shortDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/cabin"
+        android:paddingBottom="8dp"
+        android:text="5th Highest Mountain in the Philippines with an elevation of 2,907 meters above sea level "
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/itemPrice"
+        app:layout_constraintTop_toBottomOf="@+id/itemPrice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainImager"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:id="@+id/imageMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mainImager">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:id="@+id/locatedWithin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Your \nname:"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="@+id/productName"
+                    app:layout_constraintTop_toBottomOf="@+id/productName" />
+
+
+                <TextView
+                    android:id="@+id/goodFor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Booking \nremarks"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="@+id/locatedWithin"
+                    app:layout_constraintTop_toBottomOf="@+id/locatedWithin" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif"
+                    android:text="How \nMany?"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="@+id/goodFor"
+                    app:layout_constraintTop_toBottomOf="@+id/goodFor" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/cabin"
+                    android:text="GALLERY"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buongCost" />
+
+                <TextView
+                    android:id="@+id/productName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/cabin"
+                    android:text="Kape Napalit"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12"></androidx.recyclerview.widget.RecyclerView>
+
+                <EditText
+                    android:id="@+id/nameHere"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="8dp"
+                    android:ems="10"
+                    android:hint="Enter your name here"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/locatedWithin"
+                    app:layout_constraintTop_toBottomOf="@+id/productName" />
+
+                <EditText
+                    android:id="@+id/detailsHere"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:ems="10"
+                    android:hint="Enter additional booking details"
+                    android:inputType="none|text"
+                    android:minHeight="48dp"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/goodFor"
+                    app:layout_constraintTop_toBottomOf="@+id/nameHere" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/buongCost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="14dp"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phoneNum">
+
+                    <TextView
+                        android:id="@+id/bookClass"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Kape Napalit"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/dash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="--"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toEndOf="@+id/bookClass"
+                        app:layout_constraintTop_toTopOf="@+id/bookClass" />
+
+                    <TextView
+                        android:id="@+id/bookCost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="450 pesos"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toEndOf="@+id/dash"
+                        app:layout_constraintTop_toTopOf="@+id/dash" />
+
+                    <TextView
+                        android:id="@+id/mult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="*"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toEndOf="@+id/bookCost"
+                        app:layout_constraintTop_toTopOf="@+id/bookCost" />
+
+                    <TextView
+                        android:id="@+id/dayStay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="2 days"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toEndOf="@+id/mult"
+                        app:layout_constraintTop_toTopOf="@+id/mult" />
+
+                    <TextView
+                        android:id="@+id/costAround"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="="
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toEndOf="@+id/dayStay"
+                        app:layout_constraintTop_toTopOf="@+id/dayStay" />
+
+                    <TextView
+                        android:id="@+id/totalCost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/cabin"
+                        android:text="900 pesos"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toEndOf="@+id/costAround"
+                        app:layout_constraintTop_toTopOf="@+id/costAround" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <EditText
+                    android:id="@+id/quantity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:ems="10"
+                    android:hint="Quantity"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    app:layout_constraintStart_toEndOf="@+id/textView2"
+                    app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Choose Number\n to Text:"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                <Spinner
+                    android:id="@+id/phoneNum"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView20"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView20"
+                    app:layout_constraintTop_toTopOf="@+id/textView20"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageView
+                    android:id="@+id/expandedImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/backExpanded"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alwaysDrawnWithCache="false"
+        android:animateLayoutChanges="false"
+        android:background="#8C8989"
+        android:visibility="invisible">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/book"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="Buy Now!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow"
+        app:tint="#000000" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

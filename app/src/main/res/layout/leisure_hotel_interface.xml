@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEAEA"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainImager"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:id="@+id/imageMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/checkRoute"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <RadioGroup
+                    android:id="@+id/classes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/goodFor"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+                    <RadioButton
+                        android:id="@+id/room1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="48dp"
+                        android:minHeight="48dp"
+                        android:text="Room 1"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/room2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="Room 2" />
+
+                    <RadioButton
+                        android:id="@+id/room3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0"
+                        android:text="Room 3" />
+
+                    <RadioButton
+                        android:id="@+id/room4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0"
+                        android:text="Room 4" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/locatedWithin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Your Name:"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="@+id/productName"
+                    app:layout_constraintTop_toBottomOf="@+id/productName" />
+
+
+                <Button
+                    android:id="@+id/book"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Book Now!"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buongCost" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/cabin"
+                    android:text="About"
+                    android:textColor="#000000"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imageGallery" />
+
+                <TextView
+                    android:id="@+id/goodFor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Booking \nremarks"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="@+id/locatedWithin"
+                    app:layout_constraintTop_toBottomOf="@+id/locatedWithin" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Choose \nNumber"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/goodFor"
+                    app:layout_constraintTop_toBottomOf="@+id/goodFor" />
+
+                <Spinner
+                    android:id="@+id/phoneNum"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView20"
+                    app:layout_constraintEnd_toEndOf="@+id/detailsHere"
+                    app:layout_constraintStart_toEndOf="@+id/textView20"
+                    app:layout_constraintTop_toTopOf="@+id/textView20"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/cabin"
+                    android:text="GALLERY"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/book" />
+
+                <TextView
+                    android:id="@+id/productName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/cabin"
+                    android:text="Victoria Suites"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/detailDesc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:paddingBottom="14dp"
+                    android:text="Fully sanitized guest rooms that are ready for occupancy. Reservations are available.\nAmenities and Facilities include\n-Fully air-conditioned rooms\n-Hot and cold showers\n-Cable TV\n-Free WI-FI\n-Free Coffee\nLocated at Rocky Village, Poblacion, Pangantucan, Bukidnon"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/imageGallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12"></androidx.recyclerview.widget.RecyclerView>
+
+                <EditText
+                    android:id="@+id/nameHere"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:ems="10"
+                    android:hint="Enter your name here"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/textView22"
+                    app:layout_constraintStart_toEndOf="@+id/locatedWithin"
+                    app:layout_constraintTop_toBottomOf="@+id/productName" />
+
+                <EditText
+                    android:id="@+id/detailsHere"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ems="10"
+                    android:hint="Enter additional booking details"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/goodFor"
+                    app:layout_constraintEnd_toEndOf="@+id/nameHere"
+                    app:layout_constraintStart_toEndOf="@+id/goodFor"
+                    app:layout_constraintTop_toBottomOf="@+id/nameHere" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/buongCost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="14dp"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/classes">
+
+                    <TextView
+                        android:id="@+id/bookClass"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Room 2"
+                        android:textSize="14sp"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/dash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="--"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toEndOf="@+id/bookClass"
+                        app:layout_constraintTop_toTopOf="@+id/bookClass" />
+
+                    <TextView
+                        android:id="@+id/bookCost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="450 pesos"
+                        android:textSize="14sp"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toEndOf="@+id/dash"
+                        app:layout_constraintTop_toTopOf="@+id/dash" />
+
+                    <TextView
+                        android:id="@+id/mult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="*"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toEndOf="@+id/bookCost"
+                        app:layout_constraintTop_toTopOf="@+id/bookCost" />
+
+                    <TextView
+                        android:id="@+id/dayStay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="2 days"
+                        android:textSize="14sp"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toEndOf="@+id/mult"
+                        app:layout_constraintTop_toTopOf="@+id/mult" />
+
+                    <TextView
+                        android:id="@+id/costAround"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="="
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toEndOf="@+id/dayStay"
+                        app:layout_constraintTop_toTopOf="@+id/dayStay" />
+
+                    <TextView
+                        android:id="@+id/totalCost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/cabin"
+                        android:text="900 pesos"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toEndOf="@+id/costAround"
+                        app:layout_constraintTop_toTopOf="@+id/costAround" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="78dp"
+                    android:layout_marginRight="78dp"
+                    android:text="Days of \nStay: "
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/nameHere" />
+
+                <Spinner
+                    android:id="@+id/daysList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:contentDescription="@string/app_name"
+                    android:minHeight="48dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView22"
+                    app:layout_constraintTop_toTopOf="@+id/textView22" />
+
+                <Button
+                    android:id="@+id/bookingDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Set Date"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/phoneNum"
+                    app:layout_constraintTop_toBottomOf="@+id/daysList" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/checkRoute"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Check Route to Location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow"
+        app:tint="#000000" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

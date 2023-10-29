@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Store_Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/store_home"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/storeHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/cabin_bold"
+            android:text="GOODS @"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="@color/purple_200"
+            android:textColorHint="@color/teal_200"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/cabin_bold"
+            android:text="PANGANTUCAN"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="@color/purple_500"
+            android:textColorHint="@color/teal_200"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/storeHeader"
+            app:layout_constraintTop_toBottomOf="@+id/storeHeader" />
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/app_name"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_image" />
+
+        <TextView
+            android:id="@+id/leisure_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/search_bg"
+            android:drawablePadding="14dp"
+            android:ems="10"
+            android:fontFamily="@font/cabin"
+            android:gravity="center"
+            android:padding="14dp"
+            android:text="Products, delicacies, accessories, and other products that are genuinely made in Pangantucan, are displayed here"
+            android:textColor="#000000"
+            android:textColorHint="#78909C"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/profileImage"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/news"
+            app:layout_constraintTop_toBottomOf="@+id/news" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/cabin"
+        android:text="Foods, Souvenirs, and other products"
+        android:textColor="#000000"
+        android:textColorHint="@color/teal_200"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <ScrollView
+        android:id="@+id/newsFeed"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:animateLayoutChanges="false"
+        android:animationCache="false"
+        android:fadeScrollbars="true"
+        android:overScrollMode="always"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECEAEA" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

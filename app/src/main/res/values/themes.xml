@@ -1,0 +1,16 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.CITRAInitiative" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#003087</item>
+        <item name="colorPrimaryVariant">#D98032</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#69BFAF</item>
+        <item name="colorSecondaryVariant">#97D700</item>
+        <item name="colorOnSecondary">#BC17BF</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">#69BFAF</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

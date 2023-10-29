@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "348516455063",
+    "firebase_url": "https://citra-initiative-default-rtdb.firebaseio.com",
+    "project_id": "citra-initiative",
+    "storage_bucket": "citra-initiative.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348516455063:android:de12dc75f4d384c06acfd2",
+        "android_client_info": {
+          "package_name": "com.example.citraexperimental"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348516455063-q89vostc2fkrj0tif5nlf990753v16ng.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZuHWNM5_qq4XBT5MeDzLzdmjClxQu_70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348516455063-q89vostc2fkrj0tif5nlf990753v16ng.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348516455063:android:c81a98ac3d1074fc6acfd2",
+        "android_client_info": {
+          "package_name": "com.example.citrainitiative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348516455063-q89vostc2fkrj0tif5nlf990753v16ng.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZuHWNM5_qq4XBT5MeDzLzdmjClxQu_70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348516455063-q89vostc2fkrj0tif5nlf990753v16ng.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348516455063:android:0f32a67202bf06c96acfd2",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348516455063-q89vostc2fkrj0tif5nlf990753v16ng.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZuHWNM5_qq4XBT5MeDzLzdmjClxQu_70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348516455063-q89vostc2fkrj0tif5nlf990753v16ng.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348516455063:android:a6144794ca2c28a86acfd2",
+        "android_client_info": {
+          "package_name": "com.example.wireframeniadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348516455063-q89vostc2fkrj0tif5nlf990753v16ng.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZuHWNM5_qq4XBT5MeDzLzdmjClxQu_70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348516455063-q89vostc2fkrj0tif5nlf990753v16ng.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
